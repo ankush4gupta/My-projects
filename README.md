@@ -1,7 +1,9 @@
 # The Media
-###### _The media is a demo new site _
+###### _The media is a demo news site _
 
+# ![Demo link] (https://elegant-queijadas-28fd84.netlify.app/)
 ![The Media](/images/footer.png)
+
 ![The Media](/images/home.png)
 
 
