@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediaSite</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".drop").click(function () {
+                $(".latestNews").toggle();
+            });
+
+            $(".searchBtn").click(function () {
+                $(".searchBox").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container header-container-css">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 header1">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="#">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-1" href="#">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-link-1" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-logo-searchbar-css">
+
+                    <div class=" header-logo-text">
+                        <div class="logo-img">
+                            <img src="images/logo.png" class="img-fluid" alt="logo">
+                        </div>
+                        <h1 class="logo-name"> The Media</h1>
+                    </div>
+
+                    <div class="header-searchBox-login">
+                        <form class="d-flex">
+                            <input class="form-control me-2 searchBox" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <i class="fas fa-search fa-2x searchBtn" style="color:#2a53b6;"></i>
+                        </form>
+                        <a href="" style="color:#2a53b6;">
+                            <i class="fas fa-user fa-2x mx-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Fixed Header -->
+    <div class="position-sticky top-0 z-index-1 header-2">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" aria-current="page" href="#">Editorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">Political</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">National</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">International</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">Regional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="#">Social Issues</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link-2" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item nav-link-2" href="#">Entertainment</a></li>
+                        <li><a class="dropdown-item nav-link-2" href="#">Sports</a></li>
+                        <li><a class="dropdown-item nav-link-2" href="#">Economics</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- googel ad -->
+    <div class="container bg-warning mt-3 banner-ad">
+
+    </div>
+
+    <!-- Breaking News ,trending Topics, google ads & my report -->
+    <section class=" mt-3 mb-3">
+        <div class="container ">
+            <div class="row ">
+                <!-- Breaking News section -->
+                <div class="col-sm-9 mt-3 mb-3">
+                    <h1 class="breaking-news-heading"><i class="fas fa-globe-americas" style="color:#2a53b6;"></i>
+                        Breaking News</h1>
+                    <hr>
+                    <div class="card">
+                        <img src="1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
+                                corrupti iure maiores. Tenetur aspernatur natus fugiat distinctio nihil libero corporis
+                                nam et, dignissimos perferendis, soluta itaque quaerat inventore alias quasi quod
+                                provident sapiente debitis hic! Debitis incidunt molestiae totam excepturi doloremque
+                                voluptatem cumque repellat beatae vero, possimus ex, quae reiciendis quas ut, deleniti
+                                non aut sed. Quis provident aperiam, modi voluptatem ea possimus odit eum iste dolor
+                                iusto doloremque saepe consequuntur minima incidunt. Adipisci itaque perferendis maxime
+                                dolor provident ipsum accusantium qui repudiandae asperiores eius non quaerat ad,
+                                impedit minus laboriosam aut dolorem quos velit aliquam inventore? Labore voluptates,
+                                ratione, accusamus illo necessitatibus iure similique suscipit ut nostrum, quidem
+                                repellendus nobis repellat. Molestiae veniam laboriosam laborum alias inventore
+                                assumenda, atque dicta itaque cupiditate quod velit, excepturi dolore, iure dignissimos
+                                illo. Libero odit impedit dolorum quo perspiciatis quos sit quisquam! Distinctio
+                                adipisci veniam eos magnam, consectetur culpa facere? Voluptatibus officia veritatis
+                                <!-- magni porro est quae corporis doloribus tenetur numquam explicabo repellat maiores
+                                aspernatur asperiores commodi qui, praesentium enim sapiente? Quidem distinctio fugiat
+                                nesciunt accusantium libero quis officiis error ratione quaerat harum quam cupiditate
+                                blanditiis, consequuntur esse praesentium ut exercitationem asperiores eaque, similique
+                                quae. Modi distinctio omnis molestiae eos vel earum harum et illo numquam adipisci
+                                mollitia, debitis provident accusantium, blanditiis sit. Nihil enim totam neque unde
+                                velit nemo sed optio. Soluta facilis atque optio, aperiam praesentium, fuga consequuntur
+                                sit illo accusamus, rem nihil. -->
+                            </p>
+                            <div class="like-share">
+
+                                <div class="toltip">
+                                    <div class="like">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="toltiptext" style="margin-left: -60px;">like</span>
+                                </div>
+
+                                <div class="toltip">
+                                    <div class="share">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <span class="toltiptext">share</span>
+                                </div>
+
+
+                            </div>
+
+                            <div style="display: flex; justify-content: center">
+                                <button class="btn  text-center  myreport-btn">Show more <i
+                                        class="fas fa-angle-double-right"></i></button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- breaking news end -->
+
+                <!-- Trending Topics, google ads & myreport  section start -->
+                <div class="col-sm-3 mt-3 mb-3">
+
+                    <div class="row">
+                        <!-- Trending Topics start -->
+                        <div class="col-12 trending-topic-block">
+                            <h1 class="trending-topic"><i class="fas fa-line-chart" style="color:#2a53b6;"></i> Trending
+                                Topics</h1>
+                            <hr>
+                            <div class="trending-topic-content">#Watchdog</div>
+                            <div class="trending-topic-content">#news Channel</div>
+                            <div class="trending-topic-content">#India</div>
+                            <div class="trending-topic-content">#breaking-news</div>
+                            <div class="trending-topic-content">#something</div>
+                            <div class="trending-topic-content">#Watchdog</div>
+                            <div class="trending-topic-content">#news Channel</div>
+                            <div class="trending-topic-content">#India</div>
+                            <div class="trending-topic-content">#breaking-news</div>
+
+                        </div>
+                        <!-- Trending Topics end -->
+                        <!-- Google Ads start -->
+
+                        <div class="col-12 mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Google Ads end -->
+                        <!-- My report start -->
+                        <div class="col-12 mt-4 vh-8">
+                            <h1 class="breaking-news-heading"><i class="fas fa-pen-fancy" style="color:gray
+;"></i>
+                                My Report</h1>
+                            <hr>
+                            <div class="card" style="border-left :2px solid #2a53b6;">
+                                <img src="/images/myreport.jpg" alt="">
+                                <div class="card-body text-center mt-3">
+
+
+                                    <a href="#" class="btn myreport-btn text-center">My-report <i
+                                            class="fas fa-pen-fancy "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- My report end -->
+                    </div>
+
+                </div>
+                <!-- Trending Topics, google ads & myreport  section end -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Breaking News , trending Topics, google ads & myreport  ends-->
+    <!-- Latest News -->
+    <section class=" mt-3 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-11">
+                    <h2> <i class="fas fa-newspaper " style="color:#2a53b6;"></i> Latest News</h2>
+                </div>
+                <div class="col-md-1 drop">
+                    <i class="fa fa-caret-down" style="font-size:42px; color:#2a53b6;"></i>
+                </div>
+                <hr>
+            </div>
+        </div>
+        </div>
+
+        <div class="container latestNews">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card m-2 mx-auto latestNews-cards" style=" width: 22rem;">
+                        <div class="card-body">
+                            <div class=" row">
+                                <div class="col-md-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Videos And Audio -->
+    <section class="container-flude mt-5 mb-3" style="background-color:#ebebeb ;">
+        <div class="container p-5">
+            <div class="row">
+
+                <!-- Videos -->
+                <div class="col-md-8">
+                    <div class="my-3">
+                        <h2 class="my-3"><i class="fas fa-video" style="color: #2a53b6;"></i> Videos</h2>
+                        <hr>
+                    </div>
+                    <!-- <div class="card bg-dark text-white" style="max-height: 393.1px;">
+
+                        <video controls>
+                            <source src="images/News_Station_Master_Control_Room.mp4">
+                        </video>
+
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div> -->
+                    <div class="card text-center">
+                        <!-- <div class="card-header">
+                            Featured
+                        </div> -->
+                        <video controls>
+                            <source src="images/News_Station_Master_Control_Room.mp4">
+                        </video>
+                        <div class="card-body text-start">
+
+                            <h6 class="card-title blockquote mb-4">Special title treatment</h6>
+                            <p class="card-text blockquote-footer">With supporting text below as a natural lead-in to
+                                additional content.
+                            </p>
+                            <div class="like-share">
+
+                                <div class="toltip">
+                                    <div class="like">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="toltiptext" style="margin-left: -60px;">like</span>
+                                </div>
+
+                                <div class="toltip">
+                                    <div class="share ">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <span class="toltiptext">share</span>
+                                </div>
+
+                            </div>
+                            <div style="display: flex; justify-content: center">
+                                <button class="btn ms-5 text-center  myreport-btn">Show more <i
+                                        class="fas fa-angle-double-right"></i></button>
+                            </div>
+
+
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Podcast -->
+                <div class="col-md-4">
+                    <div class="my-3">
+                        <h2 class="px-2"><i class="fas fa-podcast" style="color:#2a53b6;"></i> Podcast</h2>
+                        <hr>
+                    </div>
+
+                    <div class="container ">
+
+                        <div class="card mb-3 p-1 podcast-hover"
+                            style="max-width: 540px; max-height: 100px; overflow: hidden;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8" style="overflow: hidden;">
+                                    <div class=" card-body podcast-title">
+                                        <h5 class="card-title ">Education</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as </p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 p-1 podcast-hover"
+                            style="max-width: 540px; max-height: 100px; overflow: hidden;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8" style="overflow: hidden;">
+                                    <div class=" card-body podcast-title">
+                                        <h5 class="card-title ">Yaariya</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1 podcast-hover"
+                            style="max-width: 540px; max-height: 100px; overflow: hidden;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8" style="overflow: hidden;">
+                                    <div class=" card-body podcast-title">
+                                        <h5 class="card-title ">Career</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1 podcast-hover"
+                            style="max-width: 540px; max-height: 100px; overflow: hidden;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8" style="overflow: hidden;">
+                                    <div class=" card-body podcast-title">
+                                        <h5 class="card-title ">Journey</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1 podcast-hover"
+                            style="max-width: 540px; max-height: 100px; overflow: hidden;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://2edqwqjiapp3k7t413ovb0bj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/How-to-design-a-great-podcast-logo.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8" style="overflow: hidden;">
+                                    <div class=" card-body podcast-title">
+                                        <h5 class="card-title ">Stories</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="display: flex; justify-content: center">
+                        <button class="btn  text-center  myreport-btn">Show more <i
+                                class="fas fa-angle-double-right"></i></button>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class=" my-5 mb-3">
+
+        <div class="container">
+            <div class="my-3">
+                <h2 class="my-3"><i class="fas fa-sliders-h" style="color:#2a53b6;"></i> Categories</h2>
+                <hr>
+            </div>
+            <div class="row justify-content-between">
+                <div class="container col-6">
+
+                    <div class="card img-fluid category-card" style="width:500px">
+                        <div class="category-heading" style="width:500px">
+
+                            <h3>National</h3>
+
+
+                        </div>
+
+                        <img class="card-img-top"
+                            src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                            alt="Card image" style="width:100%">
+                        <div class="card-img-overlay mycss">
+
+                            <h5 class="card-title category-card-title" style="color: white;">Some example text some
+                                example text.
+                            </h5>
+                            <p style=" margin: 0px; color: white;">Lorem ipsum dolor sit
+                                ut?</p>
+
+                            <p style="padding:0px; margin: 0px;"> 2 days ago</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container col-6">
+
+                    <div class="card bg-dark text-white ">
+
+                        <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                            class="card-img" alt="...">
+                        <div class="card-img-overlay mycss">
+                            <a href="">
+                                <h5 class="card-title">Card title</h5>
+                            </a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.
+                                This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card-hover ">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">National </h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-hover">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">International</h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card-hover">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">States </h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-hover">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">Polictics</h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-hover">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">Sports</h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-hover">
+                        <a class="blog-new-link p-4" href="#">
+                            <h3 class="blog-heading  mx-auto" style="width:30rem;">Entertainment</h3>
+                            <div class="card  card_border mx-auto " style="width:30rem;">
+                                <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                                    alt="" class="card-img">
+                                <div class="card-body ">
+                                    <h6 class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, impedit
+                                        provident
+                                        laudantium voluptas obcaecati fugiat architecto perferendis praesentium
+                                        quibusdam
+                                        facilis.
+                                    </h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- googel ad -->
+    <div class="container bg-warning mt-3 banner-ad">
+
+    </div>
+    <!-- interview section -->
+    <section class="container-flude mt-5 mb-3" style="background-color:#ebebeb ;">
+
+        <div class="container p-5">
+            <div class="my-3">
+                <h2 class="my-3"><i class="fas fa-handshake" style="color: #2a53b6;"></i> Interviews</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="card text-center">
+
+                        <video controls>
+                            <source src="images/News_Station_Master_Control_Room.mp4">
+                        </video>
+                        <div class="card-body text-start">
+
+                            <h6 class="card-title blockquote mb-4">Special title treatment</h6>
+                            <p class="card-text blockquote-footer">With supporting text below as a natural lead-in
+                                to
+                                additional content.
+                            </p>
+                            <div class="like-share">
+
+                                <div class="toltip">
+                                    <div class="like">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="toltiptext" style="margin-left: -60px;">like</span>
+                                </div>
+
+                                <div class="toltip">
+                                    <div class="share ">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <span class="toltiptext">share</span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-4">
+
+                    <div class="card text-center">
+
+                        <video controls>
+                            <source src="images/News_Station_Master_Control_Room.mp4">
+                        </video>
+                        <div class="card-body text-start">
+
+                            <h6 class="card-title blockquote mb-4">Special title treatment</h6>
+                            <p class="card-text blockquote-footer">With supporting text below as a natural lead-in
+                                to
+                                additional content.
+                            </p>
+                            <div class="like-share">
+
+                                <div class="toltip">
+                                    <div class="like">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="toltiptext" style="margin-left: -60px;">like</span>
+                                </div>
+
+                                <div class="toltip">
+                                    <div class="share ">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <span class="toltiptext">share</span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="col-4">
+
+                    <div class="card text-center">
+
+                        <video controls>
+                            <source src="images/News_Station_Master_Control_Room.mp4">
+                        </video>
+                        <div class="card-body text-start">
+
+                            <h6 class="card-title blockquote mb-4">Special title treatment</h6>
+                            <p class="card-text blockquote-footer">With supporting text below as a natural lead-in
+                                to
+                                additional content.
+                            </p>
+                            <div class="like-share">
+
+                                <div class="toltip">
+                                    <div class="like">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="toltiptext" style="margin-left: -60px;">like</span>
+                                </div>
+
+                                <div class="toltip">
+                                    <div class="share ">
+                                        <i class="fas fa-share"></i>
+                                    </div>
+                                    <span class="toltiptext">share</span>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="mt-5" style="display: flex;  justify-content: center">
+                <button class="btn  text-center  myreport-btn">Show more <i
+                        class="fas fa-angle-double-right"></i></button>
+            </div>
+
+        </div>
+
+
+
+        </div>
+    </section>
+    <!-- Interview section end -->
+
+    <!-- Human Life interest section start -->
+    <section class="container-flude mt-5 mb-3">
+
+        <div class="container p-5">
+            <div class="my-3">
+                <h2 class="my-3"><i class='fas fa-hands-helping' style="color:#2a53b6;"></i> Human Life Interest</h2>
+                <hr>
+            </div>
+            <div class="card-group">
+                <div class="card m-1" style="background-color:#ebebeb ;">
+                    <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card m-1" style="background-color:#ebebeb ;">
+                    <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card m-1" style="background-color:#ebebeb ;">
+                    <img src="https://images.thequint.com/thequint%2F2021-08%2F5425877a-2d84-4282-aac2-98eaabd6ce71%2F11061_pti06_11_2021_000118b.jpg?rect=0%2C0%2C3000%2C1688&auto=format%2Ccompress&fmt=webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 mb-0" style="display: flex;  justify-content: center">
+                <button class="btn  text-center  myreport-btn">Show more <i
+                        class="fas fa-angle-double-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Human Life interest section end -->
+
+
+    <!-- Opinion section start -->
+    <section class="container-flude mt-5 mb-3" style="background-color:#ebebeb ;">
+
+        <div class="container p-5">
+            <div class="my-3">
+                <h2 class="my-3"><i class="fas fa-handshake" style="color: #2a53b6;"></i> Opinion</h2>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!-- Opinion section end -->
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <section>
+        <div class="footer container-fluid">
+            <div class="container container-footer">
+                <div class="section">
+                    <h4 class="section-heading">Section </h4>
+                    <ul class="section-list">
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Social</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Regional</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Covid-19</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Gender</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Podcast</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Opinion</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Education</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Law</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Cyber</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">FAQ</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">My Report</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="section">
+                    <h4 class="section-heading">Trending Topics </h4>
+                    <ul class="section-list">
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Social</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Regional</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Covid-19</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Gender</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Podcast</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Opinion</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Education</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Law</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">Cyber</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">FAQ</a>
+                        </li>
+                        <li class="section_item">
+                            <a class="section_item-link" href="#">My Report</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="horizontal"></div>
+                <div class="lower-section">
+                    <div class="footer-logo">
+                        <img class="footer-logo-img" src="/images/logo.png" alt=""> <br>
+                        The Watch Dog Media Entertainment Enterprise
+                    </div>
+
+                    <div class="footer-contact">
+                        <div class="quick-links">Quick Links</div>
+                        <ul class="section-list quick-links-item">
+                            <li class="section_item ">
+                                <a class="section_item-link" href="#">Home</a>
+                            </li>
+                            <li class="section_item">
+                                <a class="section_item-link" href="#">Blog</a>
+                            </li>
+                            <li class="section_item">
+                                <a class="section_item-link" href="#">Photography</a>
+                            </li>
+                            <li class="section_item">
+                                <a class="section_item-link" href="#">About Us</a>
+                            </li>
+                            <li class="section_item">
+                                <a class="section_item-link" href="#">Contact</a>
+                            </li>
+
+
+
+                        </ul>
+                        <ul class="section-list quick-links-item">
+                            <li class="section_item " style="color: white;">@copyright-2021</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-media">
+                        <h6 class="footer-social-media-heading">FOLLOW US ON</h6>
+                        <div class="social-media_icon">
+                            <div class="facebook"> <a href="www.facebook.com"><img style="width:100%;"
+                                        src="images/facebook.png" alt=""></a></div>
+                            <div class="whatsapp"><a href="www.instagram.com"><img style="width:100%;"
+                                        src="images/insta.png" alt=""></a></div>
+                            <div class="telegram"><a href=""><img style="width:100%;" src="images/gmail.png" alt=""></a>
+                            </div>
+                            <div class="youtube"><a href=""><img style="width:100%;" src="images/google.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
